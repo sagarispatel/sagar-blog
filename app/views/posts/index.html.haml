@@ -1,3 +1,12 @@
-%h1 Strange, quite strange. 
+%h1= "#{@name}'s blog"
 
-%p I am not really sure what needs to be in here. 
+%b
+  %p i guess ill just add some paragraphs and shit. 
+  %p oh look here is another paragraph, and shit. 
+
+  - @posts.each do |t|
+    %h4= t.title
+    %p= t.body
+
+  - @posts.each do |post|
+    %h4= link_to post.title, post_path

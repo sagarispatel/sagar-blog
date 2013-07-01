@@ -1,6 +1,8 @@
 SagarsBlog::Application.routes.draw do
 
+  get '/post/:id' => 'posts#show', as: 'post'
   get '/posts' => 'posts#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
