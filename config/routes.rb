@@ -4,7 +4,7 @@ SagarsBlog::Application.routes.draw do
   get '/posts' => 'posts#index'
   get '/posts/new' => 'posts#new'
   post '/posts' => 'posts#create'
-  get '/post/:id/edit' => 'posts#edit'
+  get '/post/:id/edit' => 'posts#edit', as: 'edit_post'
   put '/post/:id' => 'posts#update'
   delete '/post/:id' => 'posts#destroy'
  
