@@ -9,4 +9,4 @@
     %p= t.body
 
   - @posts.each do |post|
-    %h4= link_to post.title, post_path
+    %h4= link_to post.title, post_path(post)

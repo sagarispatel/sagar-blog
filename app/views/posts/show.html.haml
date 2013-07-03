@@ -2,3 +2,6 @@
 
 %p= @post.body
 
+= link_to 'Destroy', @post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+=params.inspect

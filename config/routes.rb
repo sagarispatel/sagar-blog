@@ -2,7 +2,12 @@ SagarsBlog::Application.routes.draw do
 
   get '/post/:id' => 'posts#show', as: 'post'
   get '/posts' => 'posts#index'
-
+  get '/posts/new' => 'posts#new'
+  post '/posts' => 'posts#create'
+  get '/post/:id/edit' => 'posts#edit'
+  put '/post/:id' => 'posts#update'
+  delete '/post/:id' => 'posts#destroy'
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
